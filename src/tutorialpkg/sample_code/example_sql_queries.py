@@ -101,3 +101,4 @@ if __name__ == '__main__':
     # Uncomment the lines below to run the insert queries and then see the results by running the select queries
     # sample_insert_queries()
     sample_select_queries()
+    sample_insert_queries()

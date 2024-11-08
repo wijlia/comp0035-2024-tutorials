@@ -94,7 +94,7 @@ def main():
     print(df_prepared['type'].unique())
 
     # Activity 2.09
-    #df_merged['duration'] = df_merged['end'] - df_merged['start']
+    # df_merged['duration'] = df_merged['end'] - df_merged['start']
     df_prepared.insert(df_prepared.columns.get_loc('end'), 'duration', df_prepared['end'] - df_prepared['start'])
     df_prepared['duration'] = df_prepared['duration'].dt.days.astype(int)
     print(df_prepared['duration'])
